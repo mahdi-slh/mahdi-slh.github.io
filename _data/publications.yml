@@ -1,6 +1,6 @@
 main:
 
-- title: S3M: Scalable Statistical Shape Modeling Through Unsupervised Correspondences
+- title: "S3M: Scalable Statistical Shape Modeling Through Unsupervised Correspondences"
   authors: Bastian, Lennart; Baumann, Alexander; Hoppe, Emily; Bürgin, Vincent; Kim, Ha Young; Saleh, Mahdi; Busam, Benjamin; Navab, Nassir
   conference_short: MICCAI
   conference: International Conference on Medical Image Computing and Computer-Assisted Intervention
@@ -12,25 +12,25 @@ main:
   conference: Shape in Medical Imaging, Springer Nature Switzerland, 2023
   notes: More details pending
 
-- title: CloudAttention: Efficient Multi-Scale Attention Scheme For 3D Point Cloud Learning
+- title: "CloudAttention: Efficient Multi-Scale Attention Scheme For 3D Point Cloud Learning"
   authors: Saleh, Mahdi; Wang, Yige; Navab, Nassir; Busam, Benjamin; Tombari, Federico
   conference_short: IROS
   conference: International Conference on Intelligent Robots and Systems, 2022
   notes: More details pending
 
-- title: Bending Graphs: Hierarchical Shape Matching using Gated Optimal Transport
+- title: "Bending Graphs: Hierarchical Shape Matching using Gated Optimal Transport"
   authors: Saleh, Mahdi; Wu, Shun-Cheng; Cosmo, Luca; Navab, Nassir; Busam, Benjamin; Tombari, Federico
   conference_short: CVPR
   conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022
   notes: More details pending
 
-- title: ZebraPose: Coarse to Fine Surface Encoding for 6DoF Object Pose Estimation
+- title: "ZebraPose: Coarse to Fine Surface Encoding for 6DoF Object Pose Estimation"
   authors: Su, Yongzhi; Saleh, Mahdi; Fetzer, Torben; Rambach, Jason; Navab, Nassir; Busam, Benjamin; Stricker, Didier; Tombari, Federico
   conference_short: CVPR
   conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022
   notes: More details pending
 
-- title: CoFiNet: Reliable Coarse-to-fine Correspondences for Robust PointCloud Registration
+- title: "CoFiNet: Reliable Coarse-to-fine Correspondences for Robust PointCloud Registration"
   authors: Yu, Hao; Li, Fu; Saleh, Mahdi; Busam, Benjamin; Ilic, Slobodan
   conference_short: NeurIPS
   conference: Advances in Neural Information Processing Systems 34, 2021
