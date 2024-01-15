@@ -2,8 +2,8 @@ main:
 
 - title: S3M: Scalable Statistical Shape Modeling Through Unsupervised Correspondences
   authors: Bastian, Lennart; Baumann, Alexander; Hoppe, Emily; Bürgin, Vincent; Kim, Ha Young; Saleh, Mahdi; Busam, Benjamin; Navab, Nassir
-  conference_short: LNCS
-  conference: Lecture Notes in Computer Science, Springer Nature Switzerland, 2023
+  conference_short: MICCAI
+  conference: International Conference on Medical Image Computing and Computer-Assisted Intervention
   notes: More details pending
 
 - title: On the Localization of Ultrasound Image Slices Within Point Distribution Models

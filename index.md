@@ -8,15 +8,26 @@ Hello! I'm Mahdi (also Mehdi) Saleh, a research scientist specializing in 3D com
 
 ## Research Interests
 
-- **3D Computer Vision and Machine Learning:** Focusing on 6D object pose estimation, hierarchical representations, and graph neural networks.
+- **3D computer vision and Machine Learning**
+- **6D Object pose estimation**
+- **Hierarchical representations and Graph Neural Networks**
 - **Vision Language Models**
+
 
 ## News
 
-- **[2023]** Papers accepted at ICCV, MICCAI, and CVPR.
+- **[2023]** Paper accepted at ICCV 2023.
+- **[2023]** Paper accepted at MICCAI 2023 and 1 paper for ShapeMI MICCAI Workshop.
+- **[2023]** Paper accepted at CVPR 2023.
 - **[2023]** Starting a PhD research internship at Meta Reality Labs, Redmond, WA.
-- **[2022]** Won awards at BOP 6D Object Pose Challenge.
+- **[2022]** Won 2 awards at BOP 6D Object Pose 2022 challenge. [Details](http://cmp.felk.cvut.cz/sixd/workshop_2022/)
+- **[2022]** 1 paper accepted at IROS 2022, Kyoto, Japan.
+- **[2022]** 2 papers accepted at CVPR 2022, New Orleans, USA.
+- **[2021]** 1 paper accepted at NeurIPS 2021.
+- **[2021]** Starting a PhD research internship at Facebook Reality Labs, CA.
 - **[2021]** Recognized as an Outstanding Reviewer at CVPR 2021.
+- **[2020]** Accepted Oral paper at 3DV 2020.
+
 
 ## Teaching
 
