@@ -3,35 +3,50 @@ main:
 - title: "S3M: Scalable Statistical Shape Modeling Through Unsupervised Correspondences"
   authors: Bastian, Lennart; Baumann, Alexander; Hoppe, Emily; Bürgin, Vincent; Kim, Ha Young; Saleh, Mahdi; Busam, Benjamin; Navab, Nassir
   conference_short: MICCAI
-  conference: International Conference on Medical Image Computing and Computer-Assisted Intervention
-  notes: More details pending
-
-- title: On the Localization of Ultrasound Image Slices Within Point Distribution Models
-  authors: Bastian, Lennart; Bürgin, Vincent; Kim, Ha Young; Baumann, Alexander; Busam, Benjamin; Saleh, Mahdi; Navab, Nassir
-  conference_short: ShapeMI
-  conference: Shape in Medical Imaging, Springer Nature Switzerland, 2023
-  notes: More details pending
+  conference: International Conference on Medical Image Computing and Computer-Assisted Intervention, 2023
+  pdf: https://arxiv.org/pdf/2304.07515.pdf
+  code: https://github.com/alexanderbaumann99/S3M
+  bibtex: https://bib.yliu.me/MICCAI23.txt
+  image: ./assets/img/teaser_s3m.png
 
 - title: "CloudAttention: Efficient Multi-Scale Attention Scheme For 3D Point Cloud Learning"
   authors: Saleh, Mahdi; Wang, Yige; Navab, Nassir; Busam, Benjamin; Tombari, Federico
   conference_short: IROS
   conference: International Conference on Intelligent Robots and Systems, 2022
-  notes: More details pending
+  pdf: https://arxiv.org/pdf/2208.00524.pdf
+  image: ./assets/img/teaser_cloudattention.png
 
 - title: "Bending Graphs: Hierarchical Shape Matching using Gated Optimal Transport"
   authors: Saleh, Mahdi; Wu, Shun-Cheng; Cosmo, Luca; Navab, Nassir; Busam, Benjamin; Tombari, Federico
   conference_short: CVPR
   conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022
-  notes: More details pending
+  pdf: https://arxiv.org/pdf/2202.01537.pdf
+  code: https://github.com/suyz526/ZebraPose
+  image: ./assets/img/teaser_bending.png
+  notes: Winner of the BOP 2022 Challenge
+
 
 - title: "ZebraPose: Coarse to Fine Surface Encoding for 6DoF Object Pose Estimation"
   authors: Su, Yongzhi; Saleh, Mahdi; Fetzer, Torben; Rambach, Jason; Navab, Nassir; Busam, Benjamin; Stricker, Didier; Tombari, Federico
   conference_short: CVPR
   conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022
-  notes: More details pending
+  pdf: https://openaccess.thecvf.com/content/CVPR2022/papers/Su_ZebraPose_Coarse_To_Fine_Surface_Encoding_for_6DoF_Object_Pose_CVPR_2022_paper.pdf
+  code: https://github.com/suyz526/ZebraPose
+  image: ./assets/img/teaser_zebrapose.png
+  notes: Winner of the BOP 2022 Challenge
 
 - title: "CoFiNet: Reliable Coarse-to-fine Correspondences for Robust PointCloud Registration"
   authors: Yu, Hao; Li, Fu; Saleh, Mahdi; Busam, Benjamin; Ilic, Slobodan
   conference_short: NeurIPS
+  code: https://github.com/haoyu94/Coarse-to-fine-correspondences
+  image: ./assets/img/teaser_cofinet.png
   conference: Advances in Neural Information Processing Systems 34, 2021
-  notes: More details pending
+
+- title: "Graphite: GRAPH-Induced feaTure Extraction for Point Cloud Registration"
+  authors: Saleh, Mahdi; Dehghani, Shervin; Navab, Nassir; Busam, Benjamin; Tombari, Federico
+  conference_short: 3DV
+  conference: International Conference on 3D Vision (3DV). IEEE, 2020
+  pdf: https://arxiv.org/pdf/2010.09079.pdf
+  code: https://github.com/alexanderbaumann99/S3M
+  image: ./assets/img/teaser_graphite.png
+  notes: Oral Presentation
