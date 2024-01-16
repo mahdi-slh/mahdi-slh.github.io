@@ -6,7 +6,6 @@ main:
   conference: International Conference on Medical Image Computing and Computer-Assisted Intervention, 2023
   pdf: https://arxiv.org/pdf/2304.07515.pdf
   code: https://github.com/alexanderbaumann99/S3M
-  bibtex: https://bib.yliu.me/MICCAI23.txt
   image: ./assets/img/teaser_s3m.png
 
 - title: "CloudAttention: Efficient Multi-Scale Attention Scheme For 3D Point Cloud Learning"
@@ -23,7 +22,6 @@ main:
   pdf: https://arxiv.org/pdf/2202.01537.pdf
   code: https://github.com/suyz526/ZebraPose
   image: ./assets/img/teaser_bending.png
-  notes: Winner of the BOP 2022 Challenge
 
 
 - title: "ZebraPose: Coarse to Fine Surface Encoding for 6DoF Object Pose Estimation"

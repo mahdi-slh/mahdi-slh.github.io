@@ -7,14 +7,14 @@
   height:2.4rem;
   width:2.4rem;
   background-color:transparent;
-  color:#043361!important;
+  color:#046113!important;
   border-radius:100%;
   text-align:center;
   font-size:1.15rem;
   line-height:2.5rem;
   margin-right:1rem}
 
-@media (prefers-color-scheme: dark) { .social-icons a {color: #3eb7f0 !important; }}
+@media (prefers-color-scheme: dark) { .social-icons a {color: #3ef05f !important; }}
 
 .social-icons a:last-child{margin-right:0}.social-icons a:hover{background-color:white;
     color:black;
@@ -92,13 +92,13 @@
   margin:-1.8rem}
 
 .twitter span{
-  background-color:#4099ff}
+  background-color:#3ef05f}
 
 .facebook span{
-  background-color:#4286f4}
+  background-color:#3ef05f}
 
 .linkedin span{
-  background-color:#0077B5}
+  background-color:#3ef05f}
 
 .github span{
   background-color:#000}
@@ -124,16 +124,16 @@ email {
   z-index:10}
 
 .icon-button .icon-twitter{
-  color:#4099ff}
+  color:#3ef05f}
 
 .icon-button .icon-facebook{
-  color:#4286f4}
+  color:#3ef05f}
 
 .icon-button .icon-github{
   color:#000;}
 
 .icon-button .icon-linkedin{
-  color:#0077B5}
+  color:#3ef05f}
 
 .icon-button:hover .icon-twitter,.icon-button:hover .icon-facebook,.icon-button:hover .icon-github,.icon-button:hover .icon-linkedin{color:white}
 
@@ -230,18 +230,18 @@ papertitle {
 
 h3, h4, h5, h6 {
   font-weight: 600;
-  color:#043361;
+  color:#046113;
   margin:0 0 20px;
 }
 
 h1 {
   font-weight: 500;
-  color:#043361;
+  color:#046113;
   margin:0 0 20px;
 }
 
 h2 {
-  color:#043361;
+  color:#046113;
   font-weight: 500;
   margin:2px 0px 15px;
   font-size: 157%;
@@ -249,11 +249,11 @@ h2 {
 
 @media (prefers-color-scheme: dark) {
   h1, h3, h4, h5, h6 {
-    color:rgb(62, 183, 240);
+    color:rgb(62, 240, 95);
   }
 
   h2 {
-    color:rgb(62, 183, 240);
+    color:rgb(62, 240, 77);
   }
 }
 
@@ -270,17 +270,17 @@ h1 {
 }
 
 a {
-  color:#39c;
+  color:rgb(51, 204, 89);
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:rgb(0, 153, 10);
 }
 
 @media (prefers-color-scheme: dark) {
   a {
-    color:rgb(62, 183, 240);
+    color:rgb(62, 240, 130);
   }
 }
 
@@ -343,11 +343,11 @@ th {
 
 @media (prefers-color-scheme: dark) {
   th {
-    color:rgb(62, 183, 240);
+    color:rgb(62, 240, 115);
   }
 
   dt {
-    color:rgb(62, 183, 240);
+    color:rgb(62, 240, 100);
   }
 }
 

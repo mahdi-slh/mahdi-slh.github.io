@@ -29,14 +29,12 @@ Hello! I'm Mahdi (also Mehdi) Saleh, a research scientist specializing in 3D com
 - **[2020]** Accepted Oral paper at 3DV 2020.
 
 
-## Teaching
+{% include_relative _includes/publications.md %}
 
-- **[Winter term 2023/24]** Participating in the "Praktikum on 3D Computer Vision" course at TUM.
 
 ## Student Projects
 
 - Supervising various Master's theses and projects in the field of 3D computer vision, including topics like 3D shape completion, multimodal 3D understanding, and deformable shape matching.
 
-{% include_relative _includes/publications.md %}
-
-{% include_relative _includes/services.md %}
+<!-- 
+{% include_relative _includes/services.md %} -->
