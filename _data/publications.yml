@@ -1,12 +1,12 @@
 main:
 
-- title: "S3M: Scalable Statistical Shape Modeling Through Unsupervised Correspondences"
-  authors: Bastian, Lennart; Baumann, Alexander; Hoppe, Emily; Bürgin, Vincent; Kim, Ha Young; Saleh, Mahdi; Busam, Benjamin; Navab, Nassir
-  conference_short: MICCAI
-  conference: International Conference on Medical Image Computing and Computer-Assisted Intervention, 2023
-  pdf: https://arxiv.org/pdf/2304.07515.pdf
-  code: https://github.com/alexanderbaumann99/S3M
-  image: ./assets/img/teaser_s3m.png
+# - title: "S3M: Scalable Statistical Shape Modeling Through Unsupervised Correspondences"
+#   authors: Bastian, Lennart; Baumann, Alexander; Hoppe, Emily; Bürgin, Vincent; Kim, Ha Young; Saleh, Mahdi; Busam, Benjamin; Navab, Nassir
+#   conference_short: MICCAI
+#   conference: International Conference on Medical Image Computing and Computer-Assisted Intervention, 2023
+#   pdf: https://arxiv.org/pdf/2304.07515.pdf
+#   code: https://github.com/alexanderbaumann99/S3M
+#   image: ./assets/img/teaser_s3m.png
 
 - title: "CloudAttention: Efficient Multi-Scale Attention Scheme For 3D Point Cloud Learning"
   authors: Saleh, Mahdi; Wang, Yige; Navab, Nassir; Busam, Benjamin; Tombari, Federico
