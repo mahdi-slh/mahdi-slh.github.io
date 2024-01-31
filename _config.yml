@@ -54,4 +54,4 @@ exclude:
   - README_de.md
   - LICENSE
   - minimal-light.gemspec
-  - html_source_file/
+  # - html_source_file/
