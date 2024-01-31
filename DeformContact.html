@@ -136,7 +136,7 @@
 </section>
 
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
 <div class="marquee-wrapper">
 	<div class="container">
@@ -190,14 +190,25 @@
 		</div>
 
   </div>
+</section> -->
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="pages_static/images/DeformContact_teaser.png" alt="Teaser Image" style="width:100%; height:auto;">
+      <h2 class="subtitle has-text-centered">
+        We focus on predicting deformation during contact between a rigid mesh and a soft mesh, based on their physics properties. We transform these inputs into physics-informed graphs, and utilize Graph Neural Networks to calculate the new positions of the soft body after deformation.
+      </h2>
+    </div>
+  </div>
 </section>
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="pages_static/images/DeformContact_overview.png" alt="Descriptive Alt Text" style="width:100%; height:auto;">
+      <img src="pages_static/images/DeformContact_overview.png" alt="Architecture Overview" style="width:100%; height:auto;">
       <h2 class="subtitle has-text-centered">
-        Your descriptive subtitl goes here.
+        Our approach transforms rigid and soft meshes into graphs with nodes representing key features. These graphs are processed by a GNN encoder, followed by cross-attention-based feature interaction. The final step is decoding these features to predict new mesh positions post-contact.
       </h2>
     </div>
   </div>
