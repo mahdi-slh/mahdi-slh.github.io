@@ -7,6 +7,12 @@ main:
 #   pdf: https://arxiv.org/pdf/2304.07515.pdf
 #   code: https://github.com/alexanderbaumann99/S3M
 #   image: ./assets/img/teaser_s3m.png
+- title: "Physics-Informed Graph Neural Networks for Deformation Prediction under Contact"
+  authors: Saleh, Mahdi; Sommersperger, Michael; Navab, Nassir; Tombari, Federico
+  conference_short: ICRA
+  conference: IEEE International Conference on Robotics and Automation, 2024
+  pdf: https://arxiv.org/pdf/2208.00524.pdf
+  image: ./assets/img/teaser_deformcontact.png
 
 - title: "CloudAttention: Efficient Multi-Scale Attention Scheme For 3D Point Cloud Learning"
   authors: Saleh, Mahdi; Wang, Yige; Navab, Nassir; Busam, Benjamin; Tombari, Federico

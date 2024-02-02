@@ -16,6 +16,7 @@ Hello! I'm Mahdi (also Mehdi) Saleh, a research scientist specializing in 3D com
 
 ## News
 
+- **[2024]** Paper accepted at ICRA 2024.
 - **[2023]** Paper accepted at ICCV 2023.
 - **[2023]** Paper accepted at MICCAI 2023 and 1 paper for ShapeMI MICCAI Workshop.
 - **[2023]** Paper accepted at CVPR 2023.
