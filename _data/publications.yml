@@ -11,7 +11,7 @@ main:
   authors: Saleh, Mahdi; Sommersperger, Michael; Navab, Nassir; Tombari, Federico
   conference_short: ICRA
   conference: IEEE International Conference on Robotics and Automation, 2024
-  # pdf: https://arxiv.org/pdf/2208.00524.pdf
+  code: https://github.com/mahdi-slh/DeformContact
   image: ./assets/img/teaser_deformcontact.png
   page: https://mahdi-slh.github.io/DeformContact.html
 
@@ -44,6 +44,7 @@ main:
   authors: Yu, Hao; Li, Fu; Saleh, Mahdi; Busam, Benjamin; Ilic, Slobodan
   conference_short: NeurIPS
   code: https://github.com/haoyu94/Coarse-to-fine-correspondences
+  pdf: https://proceedings.neurips.cc/paper/2021/file/c85b2ea9a678e74fdc8bafe5d0707c31-Paper.pdf
   image: ./assets/img/teaser_cofinet.png
   conference: Advances in Neural Information Processing Systems 34, 2021
 
