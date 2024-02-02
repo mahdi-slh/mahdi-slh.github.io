@@ -13,6 +13,7 @@ main:
   conference: IEEE International Conference on Robotics and Automation, 2024
   # pdf: https://arxiv.org/pdf/2208.00524.pdf
   image: ./assets/img/teaser_deformcontact.png
+  website: https://mahdi-slh.github.io/DeformContact.html
 
 - title: "CloudAttention: Efficient Multi-Scale Attention Scheme For 3D Point Cloud Learning"
   authors: Saleh, Mahdi; Wang, Yige; Navab, Nassir; Busam, Benjamin; Tombari, Federico
@@ -51,6 +52,6 @@ main:
   conference_short: 3DV
   conference: International Conference on 3D Vision (3DV). IEEE, 2020
   pdf: https://arxiv.org/pdf/2010.09079.pdf
-  code: https://github.com/alexanderbaumann99/S3M
+  # code: https://github.com/alexanderbaumann99/S3M
   image: ./assets/img/teaser_graphite.png
   notes: Oral Presentation
