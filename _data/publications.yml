@@ -7,7 +7,7 @@ main:
 #   pdf: https://arxiv.org/pdf/2304.07515.pdf
 #   code: https://github.com/alexanderbaumann99/S3M
 #   image: ./assets/img/teaser_s3m.png
-- title: "Physics-Informed Graph Neural Networks for Deformation Prediction under Contact"
+- title: "Physics-Encoded Graph Neural Networks for Deformation Prediction under Contact"
   authors: Saleh, Mahdi; Sommersperger, Michael; Navab, Nassir; Tombari, Federico
   conference_short: ICRA
   conference: IEEE International Conference on Robotics and Automation, 2024
