@@ -1,0 +1,121 @@
+/* Refinements on top of Minimal Light — typography, spacing, accents, publication cards */
+:root {
+  --accent: #047857;
+  --accent-muted: color-mix(in srgb, #047857 28%, transparent);
+  --surface-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #34d399;
+    --accent-muted: color-mix(in srgb, #34d399 35%, transparent);
+    --surface-shadow: 0 4px 28px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* Align publications variables with refined accent */
+:root {
+  --global-theme-color: var(--accent);
+  --global-hover-color: #059669;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --global-hover-color: #6ee7b7;
+  }
+}
+
+body {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+section {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+section h2 {
+  font-weight: 600 !important;
+  letter-spacing: -0.025em;
+  margin-top: 2.25rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent-muted);
+}
+
+section h2:first-of-type {
+  margin-top: 0 !important;
+}
+
+a {
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.image.avatar img {
+  box-shadow: var(--surface-shadow), 0 0 0 3px var(--accent-muted);
+}
+
+.social-icons a {
+  transition: transform 0.18s ease, background-color 0.18s ease, color 0.18s ease !important;
+}
+
+.publications {
+  margin-top: 2.5rem;
+}
+
+.publications ol.bibliography li {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 12%, #e5e5e5);
+}
+
+.publications ol.bibliography li:last-child {
+  border-bottom: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .publications ol.bibliography li {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+.publications ol.bibliography li .teaser {
+  border-radius: 12px;
+  box-shadow: var(--surface-shadow);
+}
+
+.publications ol.bibliography li .links a.btn {
+  border-radius: 7px;
+  font-weight: 500;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.publications ol.bibliography li .links a.btn:hover {
+  transform: translateY(-1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publications ol.bibliography li .links a.btn:hover {
+    transform: none;
+  }
+}

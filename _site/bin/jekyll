@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# github-pages forces config["safe"] => true, so files in _plugins/ never load locally.
+# Patch Liquid before Jekyll runs so Ruby 3.2+ works with Liquid 4 / Jekyll 3.9.
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+
+require "bundler/setup"
+require "liquid"
+
+Liquid::Variable.class_eval do
+  # Liquid 4.0 calls obj.tainted? here; Ruby 3.2+ removed taint tracking on String.
+  def taint_check(_context, _obj)
+    nil
+  end
+end
+
+load Gem.bin_path("jekyll", "jekyll")

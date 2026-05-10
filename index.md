@@ -20,7 +20,9 @@ I completed my doctoral studies at the Technical University of Munich under Fede
 
 - **[2026]** Defended my Ph.D. thesis in April, titled *Hierarchical Representations for 3D Shape Understanding*. The examination committee passed me with distinction; the degree was awarded summa cum laude.
 - **[2026]** Paper accepted at CVPR 2026 ([ConceptPose project page](https://stevenlk.xyz/conceptpose/)).
+- **[2025]** Joined VSAI as Senior Research Engineer.
 - **[2025]** Paper accepted at CVPR 2025 ([ESCAPE project page](https://mahdi-slh.github.io/ESCAPE.html)).
+- **[2025]** Zillow acquired VSAI; I joined [Zillow](https://www.zillow.com/) as a Senior Applied Scientist.
 - **[2024]** Paper accepted at ICRA 2024.
 - **[2023]** Paper accepted at ICCV 2023.
 - **[2023]** Paper accepted at MICCAI 2023 and 1 paper for ShapeMI MICCAI Workshop.
