@@ -1,5 +1,7 @@
 # Basic Information 
 title: Mahdi Saleh
+# Shown in the browser tab (<title>); header still uses position + affiliation below.
+page_title_suffix: 3D CV Researcher
 position: Senior Applied Scientist
 affiliation: Zillow
 affiliation_link: https://www.zillow.com/

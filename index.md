@@ -15,9 +15,9 @@ You can find my latest CV here: [CV](./assets/files/mahdi_saleh_cv.pdf).
 ## Research Interests
 
 - **3D computer vision and Machine Learning**
-- **6D Object pose estimation**
+- **6D Object pose estimation and 3D reconstruction**
 - **Hierarchical representations and Graph Neural Networks**
-- **Vision Language Models**
+- **Vision Language Models and Generative Media**
 
 
 ## News
