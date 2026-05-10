@@ -6,7 +6,11 @@ layout: homepage
 
 Hello! I'm Mahdi (also Mehdi) Saleh. I am a Senior Applied Scientist at [Zillow](https://www.zillow.com/), working on 3D vision and generative modeling. If you are interested in PhD internships or related opportunities, please reach out—I am happy to connect.
 
+
+
 I completed my doctoral studies at the Technical University of Munich under Federico Tombari and Nassir Navab. My research areas include 3D object pose, hierarchical representations, graph neural networks, and vision-language models. I hold a Master's degree in Biomedical Computing from TUM and a Bachelor's in Electrical Control Engineering from IUST. In my leisure time, I enjoy computer graphics and design, web development, and game design.
+
+You can find my latest CV here: [CV](./assets/files/mahdi_saleh_cv.pdf).
 
 ## Research Interests
 
