@@ -119,3 +119,84 @@ a:focus-visible {
     transform: none;
   }
 }
+
+/* Collapsible student projects table */
+.student-projects-details {
+  margin: 1rem 0 1.75rem;
+  border: 1px solid var(--accent-muted);
+  border-radius: 10px;
+  padding: 0.65rem 1rem 1rem;
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+}
+
+.student-projects-details summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.35rem 0;
+  font-size: 1rem;
+}
+
+.student-projects-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.student-projects-details summary::before {
+  content: "▸ ";
+  display: inline-block;
+  transform: translateY(-0.05em);
+}
+
+.student-projects-details[open] summary::before {
+  content: "▾ ";
+}
+
+.student-projects-table-wrap {
+  overflow-x: auto;
+  margin-top: 0.75rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.student-projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.student-projects-table th,
+.student-projects-table td {
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, #ddd);
+  padding: 0.45rem 0.55rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+.student-projects-table th {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.student-projects-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+}
+
+@media (prefers-color-scheme: dark) {
+  .student-projects-details {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .student-projects-table th,
+  .student-projects-table td {
+    border-color: rgba(255, 255, 255, 0.12);
+  }
+
+  .student-projects-table tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  .student-projects-table th {
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
