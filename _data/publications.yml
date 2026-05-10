@@ -45,7 +45,7 @@ main:
   conference_short: CVPR
   conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2022
   pdf: https://arxiv.org/pdf/2202.01537.pdf
-  code: https://github.com/suyz526/ZebraPose
+  code: https://github.com/mahdi-slh/BendingGraphs
   image: ./assets/img/teaser_bending.png
 
 
@@ -71,6 +71,6 @@ main:
   conference_short: 3DV
   conference: International Conference on 3D Vision (3DV). IEEE, 2020
   pdf: https://arxiv.org/pdf/2010.09079.pdf
-  # code: https://github.com/alexanderbaumann99/S3M
+  code: https://github.com/mahdi-slh/Graphite
   image: ./assets/img/teaser_graphite.png
   notes: Oral Presentation
