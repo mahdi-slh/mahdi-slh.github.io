@@ -1,5 +1,23 @@
 main:
 
+- title: "ConceptPose: Training-Free Zero-Shot Object Pose Estimation using Concept Vectors"
+  authors: Kuang, Liming; Velikova, Yordanka; Saleh, Mahdi; Zaech, Jan-Nico; Paudel, Danda Pani; Busam, Benjamin
+  conference_short: CVPR
+  conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2026
+  pdf: https://arxiv.org/pdf/2512.09056.pdf
+  code: https://github.com/StevenKuang/concept-pose
+  image: ./assets/img/teaser_conceptpose.jpg
+  page: https://stevenlk.xyz/conceptpose/
+
+- title: "ESCAPE: Equivariant Shape Completion via Anchor Point Encoding"
+  authors: Bekci, Burak; Saleh, Mahdi; Tombari, Federico; Navab, Nassir
+  conference_short: CVPR
+  conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025
+  pdf: https://arxiv.org/pdf/2412.00952.pdf
+  code: https://github.com/Bekci/ESCAPE
+  image: ./assets/img/teaser_escape.png
+  page: https://mahdi-slh.github.io/ESCAPE.html
+
 # - title: "S3M: Scalable Statistical Shape Modeling Through Unsupervised Correspondences"
 #   authors: Bastian, Lennart; Baumann, Alexander; Hoppe, Emily; Bürgin, Vincent; Kim, Ha Young; Saleh, Mahdi; Busam, Benjamin; Navab, Nassir
 #   conference_short: MICCAI

@@ -4,7 +4,9 @@ layout: homepage
 
 ## About Me
 
-Hello! I'm Mahdi (also Mehdi) Saleh, a research scientist specializing in 3D computer vision at TUM, supervised by Federico Tombari and Nassir Navab. Currently, I am a research intern at Meta Reality Labs in Seattle, Washington. My research areas include 3D Object Pose, Hierarchical Representation, and Graph Neural Networks. I hold a Master's degree in Biomedical Computing from TUM and a Bachelor's in Electrical Control Engineering from IUST. In my leisure time, I enjoy computer graphics and design, web development, and game design.
+Hello! I'm Mahdi (also Mehdi) Saleh. I am a Senior Applied Scientist at [Zillow](https://www.zillow.com/), working on 3D vision and generative modeling. If you are interested in PhD internships or related opportunities, please reach out—I am happy to connect.
+
+I completed my doctoral studies at the Technical University of Munich under Federico Tombari and Nassir Navab. My research areas include 3D object pose, hierarchical representations, graph neural networks, and vision-language models. I hold a Master's degree in Biomedical Computing from TUM and a Bachelor's in Electrical Control Engineering from IUST. In my leisure time, I enjoy computer graphics and design, web development, and game design.
 
 ## Research Interests
 
@@ -16,6 +18,9 @@ Hello! I'm Mahdi (also Mehdi) Saleh, a research scientist specializing in 3D com
 
 ## News
 
+- **[2026]** Defended my Ph.D. thesis in April, titled *Hierarchical Representations for 3D Shape Understanding*. The examination committee passed me with distinction; the degree was awarded summa cum laude.
+- **[2026]** Paper accepted at CVPR 2026 ([ConceptPose project page](https://stevenlk.xyz/conceptpose/)).
+- **[2025]** Paper accepted at CVPR 2025 ([ESCAPE project page](https://mahdi-slh.github.io/ESCAPE.html)).
 - **[2024]** Paper accepted at ICRA 2024.
 - **[2023]** Paper accepted at ICCV 2023.
 - **[2023]** Paper accepted at MICCAI 2023 and 1 paper for ShapeMI MICCAI Workshop.

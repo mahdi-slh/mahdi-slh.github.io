@@ -1,13 +1,14 @@
 # Basic Information 
 title: Mahdi Saleh
-position: Ph.D. Student & Research Scientist
-affiliation: Technical University of Munich (TUM)
+position: Senior Applied Scientist
+affiliation: Zillow
+affiliation_link: https://www.zillow.com/
 email: m.saleh (at) tum.de
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: Mahdi Saleh, 3D Computer Vision, Graph Neural Networks, TUM, Meta Reality Labs
-description: Mahdi Saleh's personal website - a researcher in 3D computer vision, working on advanced topics like 3D Object Pose, Hierarchical Representation, and Graph Neural Networks.
+keywords: Mahdi Saleh, 3D Computer Vision, Generative Modeling, Zillow, Graph Neural Networks, TUM
+description: Mahdi Saleh's personal website — Senior Applied Scientist at Zillow (3D vision and generative modeling); Ph.D., Technical University of Munich. Research on 3D object pose, hierarchical representations, and vision-language models.
 canonical: https://mahdi-slh.github.io/
 
 # Links 

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="ESCAPE: Equivariant Shape Completion via Anchor Point Encoding — rotation-equivariant point cloud shape completion using anchor-based distance encoding and transformers (CVPR 2025).">
+  <meta property="og:title" content="ESCAPE: Equivariant Shape Completion via Anchor Point Encoding"/>
+  <meta property="og:description" content="Rotation-equivariant shape completion from partial point clouds without explicit pose estimation. Anchor-point distance encoding + transformer, optimized decoding to full shapes (CVPR 2025)."/>
+  <meta property="og:url" content="https://mahdi-slh.github.io/ESCAPE.html"/>
+  <meta property="og:image" content="https://mahdi-slh.github.io/pages_static/images/ESCAPE_teaser.png"/>
+  <meta property="og:image:width" content="1171"/>
+  <meta property="og:image:height" content="641"/>
+
+  <meta name="twitter:title" content="ESCAPE: Equivariant Shape Completion via Anchor Point Encoding"/>
+  <meta name="twitter:description" content="Rotation-equivariant point cloud completion with anchor distance encoding and transformers (CVPR 2025)."/>
+  <meta name="twitter:image" content="https://mahdi-slh.github.io/pages_static/images/ESCAPE_teaser.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="Point Cloud Completion, Shape Completion, Equivariance, Rotation Invariance, Transformers, CVPR, 3D Vision">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ESCAPE: Equivariant Shape Completion via Anchor Point Encoding</title>
+  <link rel="icon" type="image/x-icon" href="pages_static/images/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro|Lato:wght@400;700&display=swap"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="pages_static/css/bulma.min.css">
+  <link rel="stylesheet" href="pages_static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="pages_static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="pages_static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="pages_static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="pages_static/js/fontawesome.all.min.js"></script>
+  <script src="pages_static/js/bulma-carousel.min.js"></script>
+  <script src="pages_static/js/bulma-slider.min.js"></script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+	    tex2jax: {
+	        inlineMath: [['$','$'], ['\\(','\\)']],
+	        processEscapes: true
+	    }
+	});
+    </script>
+  <script src="pages_static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="xtitle is-1 publication-title">ESCAPE: Equivariant Shape Completion via Anchor Point Encoding</h1>
+            <p class="is-size-6 has-text-grey-dark" style="max-width: 42rem; margin: 0.75rem auto 0;">
+              <strong>TL;DR:</strong> Encode every point by its distances to a small set of anchor points so geometry is expressed in a rotation-equivariant form; a transformer maps partial observations to completed shapes without a separate pose-estimation stage.
+            </p>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/Bekci" target="_blank">Burak Bekci</a><sup>1</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://mahdi-slh.github.io/" target="_blank">Mahdi Saleh</a><sup>1</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://federicotombari.github.io/" target="_blank">Federico Tombari</a><sup>1,2</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/" target="_blank">Nassir Navab</a><sup>1</sup>
+              </span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Technical University of Munich   <sup>2</sup>Google<br>CVPR 2025</span>
+                  </div>
+
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2412.00952" target="_blank"
+                      class="external-link ">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>Preprint</span>
+                    </a>
+                  </span>
+
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2412.00952.pdf" target="_blank"
+                    class="external-link ">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper (PDF)</span>
+                  </a>
+                </span>
+
+                  <span class="link-block" >
+                    <a href="https://github.com/Bekci/ESCAPE" target="_blank"
+                    class="external-link ">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                  <span class="link-block" >
+                    <a href="https://github.com/Bekci/ESCAPE/blob/main/notebooks/Infrence.ipynb" target="_blank"
+                    class="external-link ">
+                    <span class="icon">
+                      <i class="fas fa-book"></i>
+                    </span>
+                    <span>Inference notebook</span>
+                  </a>
+                </span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="pages_static/images/ESCAPE_teaser.png" alt="ESCAPE teaser — partial point clouds completed under varying rotations" style="width:100%; height:auto;">
+      <h2 class="subtitle has-text-centered">
+        Partial scans are completed consistently even when objects appear under arbitrary rotations and translations: distance-to-anchor encodings keep the representation aligned with 3D Euclidean symmetry, so the network reasons about shape rather than a fixed canonical pose.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="pages_static/images/ESCAPE_architecture.png" alt="ESCAPE model architecture" style="width:100%; height:auto;">
+      <h2 class="subtitle has-text-centered">
+        A transformer encodes and decodes anchor-distance features; predicted encodings are refined via optimization to recover dense completed point sets. The pipeline follows standard completion benchmarks (e.g., PCN, KITTI, OmniObject3D) with released training and evaluation scripts in the repository.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            ESCAPE (Equivariant Shape Completion via Anchor Point Encoding) targets rotation-equivariant shape completion from partial point clouds. The method selects anchor points on the shape and represents each point by its distances to all anchors, yielding a geometry-aware encoding that transforms consistently under rotations. A transformer architecture models these distance features end-to-end; an optimization step then maps predicted encodings back to completed shapes. Experiments show robust reconstructions across arbitrary rigid transforms without auxiliary pose-estimation modules, with code, pretrained models, and dataset pointers available in the <a href="https://github.com/Bekci/ESCAPE" target="_blank">project repository</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{bekci2024escape,
+  title={ESCAPE: Equivariant Shape Completion via Anchor Point Encoding},
+  author={Bekci, Burak and Saleh, Mahdi and Tombari, Federico and Navab, Nassir},
+  journal={arXiv preprint arXiv:2412.00952},
+  year={2024}
+}</code></pre>
+      <p class="is-size-7">Please also cite the official CVPR 2025 version once camera-ready proceedings metadata is available.</p>
+    </div>
+</section>
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            Figures sourced from the <a href="https://github.com/Bekci/ESCAPE" target="_blank">ESCAPE GitHub repository</a>.
+            This page was built using the <a href="https://github.com/vinthony/project-page-template">modification version</a> of <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> from <a href="https://github.com/vinthony">vinthony</a>.
+            This website is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+  </html>
