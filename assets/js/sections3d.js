@@ -34,6 +34,31 @@
     }).join(', ');
   });
 
+
+  /* ---------- name easter egg: Mahdi <-> Mehdi, the "a" hops, spins and lands as an "e" ---------- */
+  (function () {
+    var h1 = document.querySelector('header h1');
+    if (!h1 || !/^Mahdi\b/.test(h1.textContent.trim())) return;
+    var rest = h1.textContent.trim().slice(2);
+    h1.setAttribute('aria-label', 'Mahdi (also Mehdi) ' + rest.replace(/^hdi\s*/, ''));
+    h1.innerHTML = '<span aria-hidden="true">M<span class="nf"><span class="nf-l">a</span></span>' + rest + '</span>';
+    h1.title = 'also Mehdi';
+    var l = h1.querySelector('.nf-l'), busy = false;
+    function flip() {
+      if (busy) return; busy = true;
+      var to = l.textContent === 'a' ? 'e' : 'a';
+      l.classList.remove('land'); void l.offsetWidth; l.classList.add('hop');
+      setTimeout(function () { l.textContent = to; }, 330);              /* swap at the top of the jump */
+      setTimeout(function () { l.classList.remove('hop'); void l.offsetWidth; l.classList.add('land'); }, 660);
+      setTimeout(function () { busy = false; }, 1100);
+      return to;
+    }
+    function cycle() { if (flip() === 'e') setTimeout(flip, 1700); }      /* show "Mehdi" briefly, then back */
+    h1.addEventListener('mouseenter', cycle);
+    h1.addEventListener('click', cycle);
+    if (!reduce) { setTimeout(cycle, 2500); setInterval(cycle, 12000); }
+  })();
+
   /* ---------- glyphs ---------- */
   var cube = [[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]];
   var cubeE = [[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];

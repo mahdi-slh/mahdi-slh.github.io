@@ -81,7 +81,7 @@ header { z-index: 2; }
 /* name easter egg (sections3d.js) */
 header h1 { cursor: default; }
 .nf { display: inline-block; perspective: 300px; }
-.nf-l { display: inline-block; transform-origin: 50% 90%; color: inherit; }
+.nf-l { display: inline-block; transform-origin: 50% 90%; color: var(--accent); }
 .nf-l.hop { animation: nf-hop .66s cubic-bezier(.3,.7,.4,1); }
 .nf-l.land { animation: nf-land .44s cubic-bezier(.2,1.6,.4,1); }
 @keyframes nf-hop {

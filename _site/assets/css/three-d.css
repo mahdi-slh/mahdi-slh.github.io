@@ -77,3 +77,23 @@ header { z-index: 2; }
 .pubcard-links { display: flex; flex-wrap: wrap; gap: 14px; font-size: 12.5px; font-weight: 600; }
 .pubcard-links a { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { .pubcard, .pubcard-thumb img { transition: none !important; transform: none !important; } .pubcard-thumb::after { display: none; } }
+
+/* name easter egg (sections3d.js) */
+header h1 { cursor: default; }
+.nf { display: inline-block; perspective: 300px; }
+.nf-l { display: inline-block; transform-origin: 50% 90%; color: inherit; }
+.nf-l.hop { animation: nf-hop .66s cubic-bezier(.3,.7,.4,1); }
+.nf-l.land { animation: nf-land .44s cubic-bezier(.2,1.6,.4,1); }
+@keyframes nf-hop {
+  0%   { transform: translateY(0) scale(1, 1); }
+  15%  { transform: translateY(.05em) scale(1.25, .7); }                 /* crouch */
+  50%  { transform: translateY(-.75em) rotateY(180deg) rotate(-12deg) scale(.9, 1.15); }
+  100% { transform: translateY(0) rotateY(360deg) scale(1, 1); }
+}
+@keyframes nf-land {
+  0%   { transform: scale(1.35, .65); }                                  /* splat */
+  45%  { transform: scale(.85, 1.2) rotate(6deg); }
+  75%  { transform: scale(1.05, .95) rotate(-3deg); }
+  100% { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .nf-l.hop, .nf-l.land { animation: none; } }
