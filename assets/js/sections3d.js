@@ -26,6 +26,14 @@
     ul.parentNode.insertBefore(btn, ul.nextSibling);
   }
 
+  /* ---------- publication authors: surnames only, own name bold (full list stays in the tooltip) ---------- */
+  document.querySelectorAll('.pubcard-authors[title]').forEach(function (el) {
+    el.innerHTML = el.getAttribute('title').split(/;\s*/).map(function (n) {
+      var last = n.split(',')[0].trim();
+      return last === 'Saleh' ? '<b>Saleh</b>' : last.replace(/[<>&]/g, '');
+    }).join(', ');
+  });
+
   /* ---------- glyphs ---------- */
   var cube = [[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]];
   var cubeE = [[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];
