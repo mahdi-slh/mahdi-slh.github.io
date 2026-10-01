@@ -1,5 +1,14 @@
 main:
 
+- title: "ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs"
+  authors: Velikova, Yordanka; Saleh, Mahdi; Kuang, Liming; Busam, Benjamin
+  conference_short: IROS
+  conference: IEEE/RSJ International Conference on Intelligent Robots and Systems, 2026
+  pdf: https://arxiv.org/pdf/2607.20670
+  code: https://github.com/danivelikova/odeform
+  image: ./assets/img/teaser_odeform.jpg
+  page: https://danivelikova.github.io/odeform/
+
 - title: "ConceptPose: Training-Free Zero-Shot Object Pose Estimation using Concept Vectors"
   authors: Kuang, Liming; Velikova, Yordanka; Saleh, Mahdi; Zaech, Jan-Nico; Paudel, Danda Pani; Busam, Benjamin
   conference_short: CVPR

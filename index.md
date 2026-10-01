@@ -25,6 +25,7 @@ You can find my latest CV here: [CV](./assets/files/mahdi_saleh_cv.pdf).
 
 ## News
 
+- **[2026]** Paper accepted at IROS 2026 ([ODeform project page](https://danivelikova.github.io/odeform/)).
 - **[2026]** Defended my Ph.D. thesis in April, titled *Hierarchical Representations for 3D Shape Understanding*. The examination committee passed me with distinction; the degree was awarded summa cum laude.
 - **[2026]** Paper accepted at CVPR 2026 ([ConceptPose project page](https://stevenlk.xyz/conceptpose/)).
 - **[2025]** Zillow acquired VSAI; I joined [Zillow](https://www.zillow.com/) as a Senior Applied Scientist.
