@@ -9,10 +9,10 @@
   var DPR = Math.min(2, window.devicePixelRatio || 1);
 
   /* ---------- card tilt ---------- */
-  if (!reduce) document.querySelectorAll('.publications ol.bibliography li').forEach(function (el) {
+  if (!reduce) document.querySelectorAll('.pubcard').forEach(function (el) {
     el.addEventListener('pointermove', function (e) {
       var r = el.getBoundingClientRect(), px = (e.clientX - r.left) / r.width - .5, py = (e.clientY - r.top) / r.height - .5;
-      el.style.transform = 'perspective(1100px) rotateY(' + px * 4 + 'deg) rotateX(' + (-py * 6) + 'deg)';
+      el.style.transform = 'rotateY(' + px * 7 + 'deg) rotateX(' + (-py * 7) + 'deg)';
     });
     el.addEventListener('pointerleave', function () { el.style.transform = ''; });
   });

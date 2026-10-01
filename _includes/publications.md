@@ -1,53 +1,26 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
+<h2 id="publications">Publications</h2>
 
-<div class="publications">
-<ol class="bibliography">
-
+<div class="pubcards">
 {% for link in site.data.publications.main %}
-
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    {% if link.image %} 
-    <span class="teaser-wrap"><img src="{{ link.image }}" class="teaser img-fluid z-depth-1" alt="{{ link.title }}" loading="lazy"></span>
-    {% endif %}
-    {% if link.conference_short %} 
-    <abbr class="badge">{{ link.conference_short }} {{ link.conference | split: ", " | last | slice: -4, 4 }}</abbr>
-    {% endif %}
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-      <div class="author">{{ link.authors | replace: "Saleh, Mahdi", "<b>Saleh, Mahdi</b>" }}</div>
-      <div class="periodical"><em>{{ link.conference }}</em>
-      </div>
-    <div class="links">
-      {% if link.pdf %} 
-      <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      {% endif %}
-      {% if link.code %} 
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      {% endif %}
-      {% if link.page %} 
-      <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      {% endif %}
-      {% if link.bibtex %} 
-      <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      {% endif %}
-      {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
-      {% endif %}
-      {% if link.others %} 
-      {{ link.others }}
-      {% endif %}
+{% assign year = link.conference | split: ", " | last | slice: -4, 4 %}
+{% assign href = link.pdf | default: link.page | default: link.code %}
+<article class="pubcard">
+  {% if link.image %}<a class="pubcard-thumb" href="{{ href }}" target="_blank" rel="noopener"><img src="{{ link.image }}" alt="{{ link.title }}" loading="lazy"></a>{% endif %}
+  <div class="pubcard-text">
+    <div class="pubcard-badges">
+      {% if link.conference_short %}<span class="pubcard-venue">{{ link.conference_short }} {{ year }}</span>{% endif %}
+      {% if link.notes %}<span class="pubcard-venue alt">{{ link.notes }}</span>{% endif %}
+    </div>
+    <h3><a href="{{ href }}" target="_blank" rel="noopener">{{ link.title }}</a></h3>
+    <div class="pubcard-authors" title="{{ link.authors }}">{% assign names = link.authors | split: "; " %}{% for n in names %}{% assign last = n | split: ", " | first %}{% if last == "Saleh" %}<b>Saleh</b>{% else %}{{ last }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</div>
+    <div class="pubcard-links">
+      {% if link.pdf %}<a href="{{ link.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+      {% if link.code %}<a href="{{ link.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+      {% if link.page %}<a href="{{ link.page }}" target="_blank" rel="noopener">Project</a>{% endif %}
+      {% if link.bibtex %}<a href="{{ link.bibtex }}" target="_blank" rel="noopener">BibTeX</a>{% endif %}
+      {% if link.others %}{{ link.others }}{% endif %}
     </div>
   </div>
-</div>
-</li>
-
-<br>
-
+</article>
 {% endfor %}
-
-</ol>
 </div>
-
