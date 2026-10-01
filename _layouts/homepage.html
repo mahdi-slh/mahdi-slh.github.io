@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     <link rel="stylesheet" href="./assets/css/modern-overrides.css">
     {% endif %}
+    <link rel="stylesheet" href="./assets/css/three-d.css">
 
   </head>
   <body>
@@ -115,6 +116,11 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <!-- 3D avatar from depth map; data-cloud / data-photo point at the generated assets -->
+    <script src="./assets/js/avatar3d.js" data-cloud="./assets/data/avatar_cloud.bin" data-photo="./assets/img/avatar_photo.jpg"></script>
+    <!-- ambient background: data-mode = "graph" | "splat" | "off" -->
+    <script src="./assets/js/field3d.js" data-mode="graph"></script>
+    <script src="./assets/js/sections3d.js"></script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

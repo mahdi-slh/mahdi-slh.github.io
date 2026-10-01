@@ -4,20 +4,24 @@ layout: homepage
 
 ## About Me
 
-Hello! I'm Mahdi (also Mehdi) Saleh. I am a Senior Applied Scientist at [Zillow](https://www.zillow.com/), working on 3D vision and generative modeling. If you are interested in PhD internships or related opportunities, please reach out—I am happy to connect.
+<p class="lede">I build models that let machines <span>perceive, reconstruct and generate</span> the 3D world.</p>
 
+Hello! I'm Mahdi (also Mehdi) Saleh, a Senior Applied Scientist at [Zillow](https://www.zillow.com/), where I lead work on spatial foundation models and large-scale generative and world modeling for 3D. If you're a PhD student interested in internships or collaboration, please reach out. I'm always happy to connect.
 
-
-I completed my doctoral studies at the Technical University of Munich under Federico Tombari and Nassir Navab. My research areas include 3D object pose, hierarchical representations, graph neural networks, and vision-language models. I hold a Master's degree in Biomedical Computing from TUM and a Bachelor's in Electrical Control Engineering from IUST. In my leisure time, I enjoy computer graphics and design, web development, and game design.
+I completed my PhD at the Technical University of Munich under Federico Tombari and Nassir Navab, graduating summa cum laude. My research spans 3D reconstruction and Gaussian splatting, object pose estimation, hierarchical 3D representations, and vision-language-action models. I hold a Master's in Biomedical Computing from TUM and a Bachelor's in Electrical Control Engineering from IUST. In my free time I enjoy computer graphics, design, web development, and game design.
 
 You can find my latest CV here: [CV](./assets/files/mahdi_saleh_cv.pdf).
 
 ## Research Interests
 
-- **3D computer vision and Machine Learning**
-- **6D Object pose estimation and 3D reconstruction**
-- **Hierarchical representations and Graph Neural Networks**
-- **Vision Language Models and Generative Media**
+<div class="interests">
+  <div class="interest"><canvas data-glyph="globe" aria-hidden="true"></canvas><span>Spatial foundation models</span></div>
+  <div class="interest"><canvas data-glyph="cube" aria-hidden="true"></canvas><span>World models and generative 3D</span></div>
+  <div class="interest"><canvas data-glyph="splat" aria-hidden="true"></canvas><span>3D reconstruction and Gaussian splatting</span></div>
+  <div class="interest"><canvas data-glyph="axes" aria-hidden="true"></canvas><span>6D object pose estimation</span></div>
+  <div class="interest"><canvas data-glyph="tree" aria-hidden="true"></canvas><span>Hierarchical 3D representations</span></div>
+  <div class="interest"><canvas data-glyph="frustum" aria-hidden="true"></canvas><span>Vision-language-action models</span></div>
+</div>
 
 
 ## News
