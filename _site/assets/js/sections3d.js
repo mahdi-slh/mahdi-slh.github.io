@@ -56,7 +56,7 @@
     function cycle() { if (flip() === 'e') setTimeout(flip, 1700); }      /* show "Mehdi" briefly, then back */
     h1.addEventListener('mouseenter', cycle);
     h1.addEventListener('click', cycle);
-    if (!reduce) { setTimeout(cycle, 2500); setInterval(cycle, 12000); }
+    if (!reduce) { setTimeout(cycle, 1200); setInterval(cycle, 6000); }
   })();
 
   /* ---------- glyphs ---------- */
