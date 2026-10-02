@@ -116,6 +116,8 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <!-- phone tilt input (touch devices only); must load before the 3D scripts -->
+    <script src="./assets/js/tilt.js"></script>
     <!-- 3D avatar from depth map; data-cloud / data-photo point at the generated assets -->
     <script src="./assets/js/avatar3d.js" data-cloud="./assets/data/avatar_cloud.bin" data-photo="./assets/img/avatar_photo.jpg"></script>
     <!-- ambient background: data-mode = "graph" | "splat" | "off" -->

@@ -57,7 +57,7 @@
       vyaw = dx * .008; vpitch = dy * .008; yaw = clamp(yaw + vyaw, .55); pitch = clamp(pitch + vpitch, .3);
       lx = e.clientX; ly = e.clientY; lastInteract = performance.now();
     });
-    cv.addEventListener('pointerup', function () { drag = false; if (!moved) { target = target ? 0 : 1; hint.textContent = target ? 'drag to orbit · click for photo' : 'click for 3D'; } });
+    cv.addEventListener('pointerup', function () { drag = false; if (!moved) { target = target ? 0 : 1; hint.textContent = target ? (hint.dataset.tilt ? 'tilt your phone · tap for photo' : 'drag to orbit · click for photo') : 'click for 3D'; } });
 
     function frame(t) {
       if (!intro) intro = t;
@@ -65,10 +65,15 @@
       cloud += (target - cloud) * .08;
       if (!drag) {
         yaw = clamp(yaw + vyaw, .55); pitch = clamp(pitch + vpitch, .3); vyaw *= .9; vpitch *= .9;
-        if (t - lastInteract > 2500 && !reduce) {
+        var tilt = window.siteTilt;
+        if (tilt && tilt.active && t - lastInteract > 1200) {            /* phone: follow device tilt */
+          var gy = target ? tilt.x * .5 : 0, gp = target ? tilt.y * .28 : 0;
+          yaw += (gy - yaw) * .14; pitch += (gp - pitch) * .14;
+        } else if (t - lastInteract > 2500 && !reduce) {                 /* desktop / no sensor: idle sway */
           var ty = target ? Math.sin(t * .0005) * .28 : 0, tp = target ? Math.sin(t * .00031) * .08 : 0;
           yaw += (ty - yaw) * .02; pitch += (tp - pitch) * .02;
         }
+        if (tilt && tilt.active && !hint.dataset.tilt) { hint.dataset.tilt = 1; if (target) hint.textContent = 'tilt your phone · tap for photo'; }
       }
       var c = cloud, cy = Math.cos(yaw * c), sy = Math.sin(yaw * c), cp = Math.cos(pitch * c), sp = Math.sin(pitch * c);
       var buf = img32.data; buf.fill(0); zbuf.fill(1e9);

@@ -62,7 +62,8 @@
       bx.fillStyle = gr; bx.beginPath(); bx.arc(0, 0, 1, 0, 7); bx.fill(); bx.restore(); }
   }
   function frame(t) {
-    mx += (tmx - mx) * .04; my += (tmy - my) * .04; bx.clearRect(0, 0, W, H);
+    var tilt = window.siteTilt; if (tilt && tilt.active) { tmx = tilt.x * .5; tmy = tilt.y * .5; }   /* phone tilt replaces the mouse */
+    mx += (tmx - mx) * (tilt && tilt.active ? .1 : .04); my += (tmy - my) * (tilt && tilt.active ? .1 : .04); bx.clearRect(0, 0, W, H);
     if (mode === 'splat') splat(); else graph(t);
     if (!reduce) requestAnimationFrame(frame);
   }
