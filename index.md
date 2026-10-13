@@ -8,7 +8,7 @@ layout: homepage
 
 Hello! I'm Mahdi (also Mehdi) Saleh, a Senior Applied Scientist at [Zillow](https://www.zillow.com/), working on generative AI and 3D foundation models. If you're a PhD student interested in internships or collaboration, please reach out. I'm always happy to connect.
 
-I completed my PhD at the Technical University of Munich under [Federico Tombari](https://federicotombari.github.io/) and Nassir Navab, graduating summa cum laude. My research spans 3D reconstruction and Gaussian splatting, object pose estimation, and hierarchical 3D representations. I hold a Master's in Biomedical Computing from TUM and a Bachelor's in Electrical Control Engineering from IUST. In my free time I enjoy computer graphics, design, web development, and game design.
+I completed my PhD at the Technical University of Munich under [Federico Tombari](https://federicotombari.github.io/) and Nassir Navab, graduating summa cum laude with the thesis [*Hierarchical Representations for 3D Shape Understanding*](https://mediatum.ub.tum.de/doc/1772014/document.pdf). My research spans 3D reconstruction and Gaussian splatting, object pose estimation, and hierarchical 3D representations. I hold a Master's in Biomedical Computing from TUM and a Bachelor's in Electrical Control Engineering from IUST. In my free time I enjoy computer graphics, design, web development, and game design.
 
 You can find my latest CV here: [CV](./assets/files/mahdi_saleh_cv.pdf).
 
@@ -26,7 +26,7 @@ You can find my latest CV here: [CV](./assets/files/mahdi_saleh_cv.pdf).
 ## News
 
 - **[2026]** Paper accepted at IROS 2026 ([ODeform project page](https://danivelikova.github.io/odeform/)).
-- **[2026]** Defended my Ph.D. thesis in April, titled *Hierarchical Representations for 3D Shape Understanding*. The examination committee passed me with distinction; the degree was awarded summa cum laude.
+- **[2026]** Defended my Ph.D. thesis in April, titled [*Hierarchical Representations for 3D Shape Understanding*](https://mediatum.ub.tum.de/doc/1772014/document.pdf). The examination committee passed me with distinction; the degree was awarded summa cum laude.
 - **[2026]** Paper accepted at CVPR 2026 ([ConceptPose project page](https://stevenlk.xyz/conceptpose/)).
 - **[2025]** Zillow acquired VSAI; I joined [Zillow](https://www.zillow.com/) as a Senior Applied Scientist.
 - **[2025]** Paper accepted at CVPR 2025 ([ESCAPE project page](https://mahdi-slh.github.io/ESCAPE.html)).
